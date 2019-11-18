@@ -40,7 +40,10 @@ int main(){
     }*/
     
     // NUTRICION DE 4 A 6 AÑOS
-    if (edad >= 4 and edad <= 6){
+
+
+    
+    if (edad >= 4 && edad <= 6){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
@@ -104,7 +107,7 @@ int main(){
                     break;
                 }
                 goto opcion;
-            }// PROBLEMA VALIDANDO AQUI CON "n"
+            }// PROBLEMA VALID&&O AQUI CON "n"
             else if (strcmp(reco,"S") == 1 || strcmp(reco,"s") == 1 || strcmp(reco,"N") == 1 || strcmp(reco,"n") == 1){ // SI EL VALOR INGRESADO ES DISTINTO, SE IGUALA A 1
                 cout << "Valor ingresado es incorrecto";
                 goto opcion;
@@ -115,7 +118,7 @@ int main(){
     }
 
     // NUTRICION DE 7 A 10 AÑOS
-    if (edad >= 7 and edad <= 10){
+    if (edad >= 7 && edad <= 10){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
@@ -189,7 +192,7 @@ int main(){
     }
 
     // NUTRICION 11 A 14 AÑOS
-    if (edad >= 11 and edad <= 14){
+    if (edad >= 11 && edad <= 14){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
@@ -263,7 +266,7 @@ int main(){
     }
 
     // NUTRICION 15 A 18 AÑOS
-    if (edad >= 15 and edad <= 18){
+    if (edad >= 15 && edad <= 18){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
@@ -337,7 +340,7 @@ int main(){
     }
 
     // NUTRICION 19 A 24 AÑOS
-    if (edad >= 19 and edad <= 24){
+    if (edad >= 19 && edad <= 24){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
@@ -411,7 +414,7 @@ int main(){
     }
 
     // NUTRICION 25 A 50 AÑOS
-    if (edad >= 25 and edad <= 50){
+    if (edad >= 25 && edad <= 50){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
@@ -491,8 +494,8 @@ int main(){
 char ps (float peso, float estatura, char sexo[1]){
     // PESO FEMENINO
     if (strcmp(sexo,"F") == 0 || strcmp(sexo,"f") == 0){ // PARA VALIDAR SI EL VALOR INGRESADO ES CORRECTO
-        if (estatura >= 1.01 and estatura < 1.20){
-            if (peso >= 15 and peso <= 20){
+        if (estatura >= 1.01 && estatura < 1.20){
+            if (peso >= 15 && peso <= 20){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 15){
@@ -502,8 +505,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.20 and estatura < 1.32){
-            if (peso >= 23 and peso <= 30){
+        else if (estatura >= 1.20 && estatura < 1.32){
+            if (peso >= 23 && peso <= 30){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 23){
@@ -513,8 +516,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.32 and estatura < 1.47){
-            if (peso >= 32 and peso <= 40){
+        else if (estatura >= 1.32 && estatura < 1.47){
+            if (peso >= 32 && peso <= 40){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 32){
@@ -524,8 +527,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.47 and estatura < 1.50){
-            if (peso >= 44 and peso <= 49){
+        else if (estatura >= 1.47 && estatura < 1.50){
+            if (peso >= 44 && peso <= 49){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 44){
@@ -535,8 +538,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.50 and estatura < 1.52){
-            if (peso >= 45 and peso <= 50){
+        else if (estatura >= 1.50 && estatura < 1.52){
+            if (peso >= 45 && peso <= 50){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 45){
@@ -546,8 +549,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.52 and estatura < 1.55){
-            if (peso >= 46 and peso <= 51){
+        else if (estatura >= 1.52 && estatura < 1.55){
+            if (peso >= 46 && peso <= 51){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 46){
@@ -557,8 +560,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.55 and estatura < 1.57){
-            if (peso >= 47 and peso <= 53){
+        else if (estatura >= 1.55 && estatura < 1.57){
+            if (peso >= 47 && peso <= 53){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 47){
@@ -568,8 +571,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.57 and estatura < 1.60){
-            if (peso >= 49 and peso <= 54){
+        else if (estatura >= 1.57 && estatura < 1.60){
+            if (peso >= 49 && peso <= 54){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 49){
@@ -579,8 +582,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.60 and estatura < 1.62){
-            if (peso >= 50 and peso <= 56){
+        else if (estatura >= 1.60 && estatura < 1.62){
+            if (peso >= 50 && peso <= 56){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 50){
@@ -590,8 +593,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.62 and estatura < 1.65){
-            if (peso >= 51 and peso <= 57){
+        else if (estatura >= 1.62 && estatura < 1.65){
+            if (peso >= 51 && peso <= 57){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 51){
@@ -601,8 +604,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.65 and estatura < 1.68){
-            if (peso >= 53 and peso <= 59){
+        else if (estatura >= 1.65 && estatura < 1.68){
+            if (peso >= 53 && peso <= 59){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 53){
@@ -612,8 +615,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.68 and estatura < 1.70){
-            if (peso >= 55 and peso <= 61){
+        else if (estatura >= 1.68 && estatura < 1.70){
+            if (peso >= 55 && peso <= 61){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 55){
@@ -623,8 +626,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.70 and estatura < 1.73){
-            if (peso >= 56 and peso <= 63){
+        else if (estatura >= 1.70 && estatura < 1.73){
+            if (peso >= 56 && peso <= 63){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 56){
@@ -634,8 +637,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.73 and estatura < 1.75){
-            if (peso >= 58 and peso <= 65){
+        else if (estatura >= 1.73 && estatura < 1.75){
+            if (peso >= 58 && peso <= 65){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 58){
@@ -645,8 +648,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.75 and estatura < 1.78){
-            if (peso >= 60 and peso <= 67){
+        else if (estatura >= 1.75 && estatura < 1.78){
+            if (peso >= 60 && peso <= 67){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 60){
@@ -656,8 +659,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.78 and estatura < 1.80){
-            if (peso >= 62 and peso <= 69){
+        else if (estatura >= 1.78 && estatura < 1.80){
+            if (peso >= 62 && peso <= 69){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 62){
@@ -667,8 +670,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.80 and estatura < 1.83){
-            if (peso >= 64 and peso <= 71){
+        else if (estatura >= 1.80 && estatura < 1.83){
+            if (peso >= 64 && peso <= 71){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 64){
@@ -679,7 +682,7 @@ char ps (float peso, float estatura, char sexo[1]){
             }
         }
         else if (estatura >= 1.83){
-            if (peso >= 66 and peso <= 73){
+            if (peso >= 66 && peso <= 73){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 66){
@@ -692,8 +695,8 @@ char ps (float peso, float estatura, char sexo[1]){
     }
     // PESO MASCULINO
     if (strcmp(sexo,"M") == 0 || strcmp(sexo,"m") == 0){ // PARA VALIDAR SI EL VALOR INGRESADO ES CORRECTO
-        if (estatura >= 1.02 and estatura < 1.20){
-            if (peso >= 16 and peso <= 21){
+        if (estatura >= 1.02 && estatura < 1.20){
+            if (peso >= 16 && peso <= 21){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 16){
@@ -703,8 +706,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.20 and estatura < 1.31){
-            if (peso >= 23 and peso <= 28){
+        else if (estatura >= 1.20 && estatura < 1.31){
+            if (peso >= 23 && peso <= 28){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 23){
@@ -714,8 +717,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.31 and estatura < 1.41){
-            if (peso >= 28 and peso <= 36){
+        else if (estatura >= 1.31 && estatura < 1.41){
+            if (peso >= 28 && peso <= 36){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 28){
@@ -725,8 +728,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.41 and estatura < 1.57){
-            if (peso >= 36 and peso <= 46){
+        else if (estatura >= 1.41 && estatura < 1.57){
+            if (peso >= 36 && peso <= 46){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 36){
@@ -736,8 +739,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.57 and estatura < 1.60){
-            if (peso >= 54 and peso <= 59){
+        else if (estatura >= 1.57 && estatura < 1.60){
+            if (peso >= 54 && peso <= 59){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 54){
@@ -747,8 +750,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.60 and estatura < 1.62){ // AQUI
-            if (peso >= 55 and peso <= 60){
+        else if (estatura >= 1.60 && estatura < 1.62){ // AQUI
+            if (peso >= 55 && peso <= 60){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 55){
@@ -758,8 +761,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.62 and estatura < 1.65){
-            if (peso >= 56 and peso <= 62){
+        else if (estatura >= 1.62 && estatura < 1.65){
+            if (peso >= 56 && peso <= 62){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 56){
@@ -769,8 +772,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.65 and estatura < 1.68){
-            if (peso >= 58 and peso <= 63){
+        else if (estatura >= 1.65 && estatura < 1.68){
+            if (peso >= 58 && peso <= 63){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 58){
@@ -780,8 +783,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.68 and estatura < 1.70){
-            if (peso >= 59 and peso <= 65){
+        else if (estatura >= 1.68 && estatura < 1.70){
+            if (peso >= 59 && peso <= 65){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 59){
@@ -791,8 +794,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.70 and estatura < 1.73){
-            if (peso >= 61 and peso <= 67){
+        else if (estatura >= 1.70 && estatura < 1.73){
+            if (peso >= 61 && peso <= 67){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 61){
@@ -802,8 +805,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.73 and estatura < 1.75){
-            if (peso >= 63 and peso <= 69){
+        else if (estatura >= 1.73 && estatura < 1.75){
+            if (peso >= 63 && peso <= 69){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 63){
@@ -813,8 +816,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.75 and estatura < 1.78){
-            if (peso >= 65 and peso <= 71){
+        else if (estatura >= 1.75 && estatura < 1.78){
+            if (peso >= 65 && peso <= 71){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 65){
@@ -824,8 +827,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.78 and estatura < 1.80){
-            if (peso >= 66 and peso <= 73){
+        else if (estatura >= 1.78 && estatura < 1.80){
+            if (peso >= 66 && peso <= 73){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 66){
@@ -835,8 +838,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.80 and estatura < 1.83){
-            if (peso >= 68 and peso <= 75){
+        else if (estatura >= 1.80 && estatura < 1.83){
+            if (peso >= 68 && peso <= 75){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 68){
@@ -846,8 +849,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.83 and estatura < 1.85){
-            if (peso >= 70 and peso <= 77){
+        else if (estatura >= 1.83 && estatura < 1.85){
+            if (peso >= 70 && peso <= 77){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 70){
@@ -857,8 +860,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.85 and estatura < 1.88){
-            if (peso >= 72 and peso <= 80){
+        else if (estatura >= 1.85 && estatura < 1.88){
+            if (peso >= 72 && peso <= 80){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 72){
@@ -868,8 +871,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.88 and estatura < 1.90){
-            if (peso >= 74 and peso <= 82){
+        else if (estatura >= 1.88 && estatura < 1.90){
+            if (peso >= 74 && peso <= 82){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 74){
@@ -879,8 +882,8 @@ char ps (float peso, float estatura, char sexo[1]){
                 cout << "Su peso excede el rango recomendado";
             }
         }
-        else if (estatura >= 1.90 and estatura < 1.93){
-            if (peso >= 76 and peso <= 84){
+        else if (estatura >= 1.90 && estatura < 1.93){
+            if (peso >= 76 && peso <= 84){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 76){
@@ -891,7 +894,7 @@ char ps (float peso, float estatura, char sexo[1]){
             }
         }
         else if (estatura >= 1.93){
-            if (peso >= 78 and peso <= 86){
+            if (peso >= 78 && peso <= 86){
                 cout << "Su peso esta en el rango recomendado";
             }
             else if (peso < 78){
@@ -907,8 +910,8 @@ char ps (float peso, float estatura, char sexo[1]){
 // FUNCION PARA LAS CALORIAS (EN GENERAL)
 char calorias (int calo, int edad, char sexo[1]){
     // AMBOS SEXOS DE 4 A 6
-    if (edad >= 4 and edad <= 6){
-        if (calo >= 1200 and calo <= 1400){
+    if (edad >= 4 && edad <= 6){
+        if (calo >= 1200 && calo <= 1400){
             cout << "El consumo de calorias esta en el rango recomendado";
         }
         else if (calo < 1200){
@@ -920,8 +923,8 @@ char calorias (int calo, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 7 A 10
-    if (edad >= 7 and edad <= 10){
-        if (calo >= 1400 and calo <= 1600){
+    if (edad >= 7 && edad <= 10){
+        if (calo >= 1400 && calo <= 1600){
             cout << "El consumo de calorias esta en el rango recomendado";
         }
         else if (calo < 1400){
@@ -933,9 +936,9 @@ char calorias (int calo, int edad, char sexo[1]){
     }
 
     // DE 11 A 14
-    if (edad >= 11 and edad <= 14){
+    if (edad >= 11 && edad <= 14){
         if (strcmp (sexo,"M") == 0){
-            if (calo >= 1600 and calo <= 2000){
+            if (calo >= 1600 && calo <= 2000){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 1600){
@@ -946,7 +949,7 @@ char calorias (int calo, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (calo >= 1600 and calo <= 1800){
+            if (calo >= 1600 && calo <= 1800){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 1600){
@@ -960,9 +963,9 @@ char calorias (int calo, int edad, char sexo[1]){
     }
 
     // DE 15 A 18
-    if (edad >= 15 and edad <= 18){
+    if (edad >= 15 && edad <= 18){
         if (strcmp (sexo,"M") == 0){
-            if (calo >= 2000 and calo <= 2400){
+            if (calo >= 2000 && calo <= 2400){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 2000){
@@ -973,7 +976,7 @@ char calorias (int calo, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (calo >= 1600 and calo <= 1800){
+            if (calo >= 1600 && calo <= 1800){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 1600){
@@ -986,9 +989,9 @@ char calorias (int calo, int edad, char sexo[1]){
     }
 
     // DE 19 A 24
-    if (edad >= 19 and edad <= 24){
+    if (edad >= 19 && edad <= 24){
         if (strcmp (sexo,"M") == 0){
-            if (calo >= 2400 and calo <= 2600){
+            if (calo >= 2400 && calo <= 2600){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 2400){
@@ -999,7 +1002,7 @@ char calorias (int calo, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (calo >= 1800 and calo <= 2000){
+            if (calo >= 1800 && calo <= 2000){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 1800){
@@ -1012,9 +1015,9 @@ char calorias (int calo, int edad, char sexo[1]){
     }
 
     // DE 25 A 35
-    if (edad >= 25 and edad <= 35){
+    if (edad >= 25 && edad <= 35){
         if (strcmp (sexo,"M") == 0){
-            if (calo >= 2400 and calo <= 2600){
+            if (calo >= 2400 && calo <= 2600){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 2400){
@@ -1025,7 +1028,7 @@ char calorias (int calo, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (calo >= 1800 and calo <= 2000){
+            if (calo >= 1800 && calo <= 2000){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 1800){
@@ -1038,9 +1041,9 @@ char calorias (int calo, int edad, char sexo[1]){
     }
 
     // DE 35 A 50
-    if (edad >= 35 and edad <= 50){
+    if (edad >= 35 && edad <= 50){
         if (strcmp (sexo,"M") == 0){
-            if (calo >= 2200 and calo <= 2400){
+            if (calo >= 2200 && calo <= 2400){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 2200){
@@ -1051,7 +1054,7 @@ char calorias (int calo, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (calo >= 1700 and calo <= 1800){
+            if (calo >= 1700 && calo <= 1800){
                 cout << "El consumo de calorias esta en el rango recomendado";
             }
             else if (calo < 1700){
@@ -1067,8 +1070,8 @@ char calorias (int calo, int edad, char sexo[1]){
 // FUNCION PARA LAS PROTEINAS (EN GENERAL)
 char proteinas (int prote, int edad, char sexo[1]){
     // AMBOS SEXOS DE 4 A 6
-    if (edad >= 4 and edad <= 6){
-        if (prote >= 420 and prote <= 440){
+    if (edad >= 4 && edad <= 6){
+        if (prote >= 420 && prote <= 440){
             cout << "El consumo de proteinas esta en el rango recomendado";
         }
         else if (prote < 420){
@@ -1080,8 +1083,8 @@ char proteinas (int prote, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 7 A 10
-    if (edad >= 7 and edad <= 10){
-        if (prote >= 420 and prote <= 440){
+    if (edad >= 7 && edad <= 10){
+        if (prote >= 420 && prote <= 440){
             cout << "El consumo de proteinas esta en el rango recomendado";
         }
         else if (prote < 420){
@@ -1093,8 +1096,8 @@ char proteinas (int prote, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 11 A 14
-    if (edad >= 11 and edad <= 14){
-        if (prote >= 600 and prote <= 640){
+    if (edad >= 11 && edad <= 14){
+        if (prote >= 600 && prote <= 640){
             cout << "El consumo de proteinas esta en el rango recomendado";
         }
         else if (prote < 600){
@@ -1106,8 +1109,8 @@ char proteinas (int prote, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 15 A 18
-    if (edad >= 15 and edad <= 18){
-        if (prote >= 600 and prote <= 640){
+    if (edad >= 15 && edad <= 18){
+        if (prote >= 600 && prote <= 640){
             cout << "El consumo de proteinas esta en el rango recomendado";
         }
         else if (prote < 600){
@@ -1119,8 +1122,8 @@ char proteinas (int prote, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 19 A 24
-    if (edad >= 19 and edad <= 24){
-        if (prote >= 500 and prote <= 550){
+    if (edad >= 19 && edad <= 24){
+        if (prote >= 500 && prote <= 550){
             cout << "El consumo de proteinas esta en el rango recomendado";
         }
         else if (prote < 500){
@@ -1132,8 +1135,8 @@ char proteinas (int prote, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 25 A 50
-    if (edad >= 25 and edad <= 50){
-        if (prote >= 500 and prote <= 550){
+    if (edad >= 25 && edad <= 50){
+        if (prote >= 500 && prote <= 550){
             cout << "El consumo de proteinas esta en el rango recomendado";
         }
          else if (prote < 500){
@@ -1148,8 +1151,8 @@ char proteinas (int prote, int edad, char sexo[1]){
 // FUNCION PARA EL CALCIO (EN GENERAL)
 char calcio (int calci, int edad, char sexo[1]){
     // AMBOS SEXOS DE 4 A 6
-    if (edad >= 4 and edad <= 6){
-        if (calci >= 750 and calci <= 800){
+    if (edad >= 4 && edad <= 6){
+        if (calci >= 750 && calci <= 800){
             cout << "El consumo de calcio esta en el rango recomendado";
         }
         else if (calci < 750){
@@ -1161,8 +1164,8 @@ char calcio (int calci, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 7 A 10
-    if (edad >= 7 and edad <= 10){
-        if (calci >= 750 and calci <= 800){
+    if (edad >= 7 && edad <= 10){
+        if (calci >= 750 && calci <= 800){
             cout << "El consumo de calcio esta en el rango recomendado";
         }
         else if (calci < 750){
@@ -1174,8 +1177,8 @@ char calcio (int calci, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 11 A 14
-    if (edad >= 11 and edad <= 14){
-        if (calci >= 1100 and calci <= 1150){
+    if (edad >= 11 && edad <= 14){
+        if (calci >= 1100 && calci <= 1150){
             cout << "El consumo de calcio esta en el rango recomendado";
         }
         else if (calci < 1100){
@@ -1187,8 +1190,8 @@ char calcio (int calci, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 15 A 18
-    if (edad >= 15 and edad <= 18){
-        if (calci >= 1100 and calci <= 1150){
+    if (edad >= 15 && edad <= 18){
+        if (calci >= 1100 && calci <= 1150){
             cout << "El consumo de calcio esta en el rango recomendado";
         }
         else if (calci < 1100){
@@ -1200,8 +1203,8 @@ char calcio (int calci, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 19 A 25
-    if (edad >= 19 and edad <= 25){
-        if (calci >= 900 and calci <= 1000){
+    if (edad >= 19 && edad <= 25){
+        if (calci >= 900 && calci <= 1000){
             cout << "El consumo de calcio esta en el rango recomendado";
         }
         else if (calci < 900){
@@ -1213,8 +1216,8 @@ char calcio (int calci, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 25 A 50
-    if (edad >= 25 and edad <= 50){
-        if (calci >= 900 and calci <= 950){
+    if (edad >= 25 && edad <= 50){
+        if (calci >= 900 && calci <= 950){
             cout << "El consumo de calcio esta en el rango recomendado";
         }
         else if (calci < 900){
@@ -1229,8 +1232,8 @@ char calcio (int calci, int edad, char sexo[1]){
 // FUNCION PARA VITAMINA A (EN GENERAL)
 char VA (int A, int edad, char sexo[1]){
     // AMBOS SEXOS DE 4 A 6
-    if (edad >= 4 and edad <= 6){
-        if (A >= 250 and A <= 300){
+    if (edad >= 4 && edad <= 6){
+        if (A >= 250 && A <= 300){
             cout << "El consumo de vitamina A esta en el rango recomendado";
         }
         else if (A < 250){
@@ -1242,8 +1245,8 @@ char VA (int A, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 7 A 10
-    if (edad >= 7 and edad <= 10){
-        if (A >= 350 and A <= 400){
+    if (edad >= 7 && edad <= 10){
+        if (A >= 350 && A <= 400){
             cout << "El consumo de vitamina A esta en el rango recomendado";
         }
         else if (A < 350){
@@ -1255,8 +1258,8 @@ char VA (int A, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 11 A 14
-    if (edad >= 11 and edad <= 14){
-        if (A >= 550 and A <= 600){
+    if (edad >= 11 && edad <= 14){
+        if (A >= 550 && A <= 600){
             cout << "El consumo de vitamina A esta en el rango recomendado";
         }
         else if (A < 550){
@@ -1268,9 +1271,9 @@ char VA (int A, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 15 A 18
-    if (edad >= 15 and edad <= 18){
+    if (edad >= 15 && edad <= 18){
         if (strcmp (sexo,"M") == 0){
-            if (A >= 700 and A <= 750){
+            if (A >= 700 && A <= 750){
                 cout << "El consumo de vitamina A esta en el rango recomendado";
             }
             else if (A < 700){
@@ -1281,7 +1284,7 @@ char VA (int A, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (A >= 600 and A <= 650){
+            if (A >= 600 && A <= 650){
                 cout << "El consumo de vitamina A esta en el rango recomendado";
             }
             else if (A < 600){
@@ -1294,9 +1297,9 @@ char VA (int A, int edad, char sexo[1]){
     }
 
     // DE 19 A 50
-    if (edad >= 19 and edad <= 50){
+    if (edad >= 19 && edad <= 50){
         if (strcmp (sexo,"M") == 0){
-            if (A >= 700 and A <= 750){
+            if (A >= 700 && A <= 750){
                 cout << "El consumo de vitamina A esta en el rango recomendado";
             }
             else if (A < 700){
@@ -1307,7 +1310,7 @@ char VA (int A, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (A >= 600 and A <= 650){
+            if (A >= 600 && A <= 650){
                 cout << "El consumo de vitamina A esta en el rango recomendado";
             }
             else if (A < 600){
@@ -1324,8 +1327,8 @@ char VA (int A, int edad, char sexo[1]){
 // FUNCION PARA VITAMINA C (EN GENERAL)
 char VC (int C, int edad, char sexo[1]){
     // AMBOS SEXOS DE 4 A 6
-    if (edad >= 4 and edad <= 6){
-        if (C >= 25 and C <= 30){
+    if (edad >= 4 && edad <= 6){
+        if (C >= 25 && C <= 30){
             cout << "El consumo de vitamina C esta en el rango recomendado";
         }
         else if (C < 25){
@@ -1337,8 +1340,8 @@ char VC (int C, int edad, char sexo[1]){
     }
 
     // AMBOS SEXOS DE 7 A 10
-    if (edad >= 7 and edad <= 10){
-        if (C >= 40 and C <= 45){
+    if (edad >= 7 && edad <= 10){
+        if (C >= 40 && C <= 45){
             cout << "El consumo de vitamina C esta en el rango recomendado";
         }
         else if (C < 40){
@@ -1350,8 +1353,8 @@ char VC (int C, int edad, char sexo[1]){
     }
 
      // AMBOS SEXOS DE 11 A 14
-    if (edad >= 11 and edad <= 14){
-        if (C >= 65 and C <= 70){
+    if (edad >= 11 && edad <= 14){
+        if (C >= 65 && C <= 70){
             cout << "El consumo de vitamina C esta en el rango recomendado";
         }
         else if (C < 65){
@@ -1363,9 +1366,9 @@ char VC (int C, int edad, char sexo[1]){
     }
 
     // DE 15 A 18
-    if (edad >= 15 and edad <= 18){
+    if (edad >= 15 && edad <= 18){
         if (strcmp (sexo,"M") == 0){
-            if (C >= 95 and C <= 100){
+            if (C >= 95 && C <= 100){
                 cout << "El consumo de vitamina C esta en el rango recomendado";
             }
             else if (C < 95){
@@ -1376,7 +1379,7 @@ char VC (int C, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (C >= 85 and C <= 90){
+            if (C >= 85 && C <= 90){
                 cout << "El consumo de vitamina C esta en el rango recomendado";
             }
             else if (C < 85){
@@ -1389,9 +1392,9 @@ char VC (int C, int edad, char sexo[1]){
     }
 
     // DE 19 A 50
-    if (edad >= 19 and edad <= 50){
+    if (edad >= 19 && edad <= 50){
         if (strcmp (sexo,"M") == 0){
-            if (C >= 105 and C <= 110){
+            if (C >= 105 && C <= 110){
                 cout << "El consumo de vitamina C esta en el rango recomendado";
             }
             else if (C < 105){
@@ -1402,7 +1405,7 @@ char VC (int C, int edad, char sexo[1]){
             }
         }
         else if (strcmp (sexo,"F") == 0){
-            if (C >= 80 and C <= 95){
+            if (C >= 80 && C <= 95){
                 cout << "El consumo de vitamina C esta en el rango recomendado";
             }
             else if (C < 80){

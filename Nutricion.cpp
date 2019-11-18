@@ -50,26 +50,20 @@ void menu2(){
             cout << "Vitamina A: "; cin >> A; 
             cout << "Vitamina C (mg): "; cin >> C;
             cout << endl;
-
-            
-
-            ofstream login(arc);
-            if(login.is_open()){
-                login<<"login de "<<arc<<endl;
-                login<<"Nutrientes consumidos: "<<endl;
-                login<<"Calorias: "<<calo<<endl;
-                login<<"Proteinas: "<<prot<<endl;
-                login<<"Calcio: "<<calc<<endl;
-                login<<"Vitamina A"<<A<<endl;
-                login<<"Vitamina C"<<C<<endl;
-                login<<endl;
-                login.close();
-            }
 }
+/*
+void entrada(){
+            ofstream login("logs.txt");
+            login.​open​​("logs.txt​",​​ios​::​app​);
+            
+            login.​close​();
+}
+*/
+
 
 
 int main(){
-    cout<<"bienvenido"<<endl;
+    
     //dteccion de p_log.txt
     ifstream plog("p_log.txt");
     if(plog.is_open()){
@@ -84,8 +78,16 @@ int main(){
         plog.close();
     }
     else menu1();
-
-menu2();
+    
+    ofstream login;
+    login.open("logs.txt", ios::app);
+    login<<wt<<endl;
+    login<<calo<<endl;
+    login<<prot<<endl;
+    login<<calc<<endl;
+            login<<A<<endl;
+            login<<C<<endl;
+            login.close();
 
 
 

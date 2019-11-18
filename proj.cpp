@@ -40,7 +40,7 @@ int main(){
     }*/
     
     // NUTRICION DE 4 A 6 AÑOS
-    if (edad >= 4 and edad <= 6){
+    if (edad >= 4 && edad <= 6){
         while (dia <= 30){
             cout << "DIA " << dia; cout << endl;
             cout << "Ingrese su peso (en kg): "; cin >> peso;
