@@ -1,0 +1,4 @@
+Nombre: Christian
+Edad: 19
+Estatura: 1.79
+Sexo: M
