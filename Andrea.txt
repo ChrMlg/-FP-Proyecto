@@ -231,3 +231,198 @@ Esta consumiendo mas proteinas de lo que deberia.
 Esta en el rango optimo de calcio. 
 Esta en el rango optimo de vitamina A. 
 Esta en el rango optimo de vitamina C. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:00:20 2019
+
+
+Calorias: 50
+Proteinas: 412
+Calcio: 789
+Vitamina A: 45
+Vitamina C: 35
+
+Esta consumiendo menos calorias de lo que deberia. 
+Esta consumiendo menos proteinas de lo que deberia. 
+Esta consumiendo menos calcio de lo que deberia. 
+Esta consumiendo menos vitamina A de lo que deberia. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:00:41 2019
+
+
+Calorias: 1500
+Proteinas: 89
+Calcio: 900
+Vitamina A: 123
+Vitamina C: 354
+
+Esta consumiendo menos calorias de lo que deberia. 
+Esta consumiendo menos proteinas de lo que deberia. 
+Esta consumiendo menos calcio de lo que deberia. 
+Esta consumiendo menos vitamina A de lo que deberia. 
+Esta consumiendo mas vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:01:09 2019
+
+
+Calorias: 1500
+Proteinas: 950
+Calcio: 1000
+Vitamina A: 630
+Vitamina C: 90
+
+Esta consumiendo menos calorias de lo que deberia. 
+Esta consumiendo mas proteinas de lo que deberia. 
+Esta en el rango optimo de calcio. 
+Esta en el rango optimo de vitamina A. 
+Esta en el rango optimo de vitamina C. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:01:57 2019
+
+
+Calorias: 1755
+Proteinas: 800
+Calcio: 456
+Vitamina A: 658
+Vitamina C: 53
+
+Esta en el rango optimo de calorias. 
+Esta consumiendo mas proteinas de lo que deberia. 
+Esta consumiendo menos calcio de lo que deberia. 
+Esta en el rango optimo de vitamina A. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:02:31 2019
+
+
+Calorias: 1760
+Proteinas: 5
+Calcio: 13
+Vitamina A: 89
+Vitamina C: 80
+
+Esta en el rango optimo de calorias. 
+Esta consumiendo menos proteinas de lo que deberia. 
+Esta consumiendo menos calcio de lo que deberia. 
+Esta consumiendo menos vitamina A de lo que deberia. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:03:32 2019
+
+
+Calorias: 1600
+Proteinas: 642
+Calcio: 998
+Vitamina A: 56
+Vitamina C: 89
+
+Esta en el rango optimo de calorias. 
+Esta consumiendo mas proteinas de lo que deberia. 
+Esta en el rango optimo de calcio. 
+Esta consumiendo menos vitamina A de lo que deberia. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:04:15 2019
+
+
+Calorias: 654
+Proteinas: 789
+Calcio: 254
+Vitamina A: 12
+Vitamina C: 56
+
+Esta consumiendo menos calorias de lo que deberia. 
+Esta consumiendo mas proteinas de lo que deberia. 
+Esta consumiendo menos calcio de lo que deberia. 
+Esta consumiendo menos vitamina A de lo que deberia. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:05:31 2019
+
+
+Calorias: 456
+Proteinas: 152
+Calcio: 952
+Vitamina A: 800
+Vitamina C: 93
+
+Esta consumiendo menos calorias de lo que deberia. 
+Esta consumiendo menos proteinas de lo que deberia. 
+Esta en el rango optimo de calcio. 
+Esta consumiendo mas vitamina A de lo que deberia. 
+Esta en el rango optimo de vitamina C. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:06:20 2019
+
+
+Calorias: 456
+Proteinas: 640
+Calcio: 982
+Vitamina A: 642
+Vitamina C: 91
+
+Esta consumiendo menos calorias de lo que deberia. 
+Esta consumiendo mas proteinas de lo que deberia. 
+Esta en el rango optimo de calcio. 
+Esta en el rango optimo de vitamina A. 
+Esta en el rango optimo de vitamina C. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:07:08 2019
+
+
+Calorias: 6978
+Proteinas: 123
+Calcio: 456
+Vitamina A: 900
+Vitamina C: 70
+
+Esta consumiendo mas calorias de lo que deberia. 
+Esta consumiendo menos proteinas de lo que deberia. 
+Esta consumiendo menos calcio de lo que deberia. 
+Esta consumiendo mas vitamina A de lo que deberia. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:07:32 2019
+
+
+Calorias: 1900
+Proteinas: 600
+Calcio: 1200
+Vitamina A: 670
+Vitamina C: 80
+
+Esta en el rango optimo de calorias. 
+Esta en el rango optimo de proteinas. 
+Esta consumiendo mas calcio de lo que deberia. 
+Esta en el rango optimo de vitamina A. 
+Esta consumiendo menos vitamina C de lo que deberia. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:08:38 2019
+
+
+Calorias: 1762
+Proteinas: 525
+Calcio: 997
+Vitamina A: 645
+Vitamina C: 92
+
+Esta en el rango optimo de calorias. 
+Esta en el rango optimo de proteinas. 
+Esta en el rango optimo de calcio. 
+Esta en el rango optimo de vitamina A. 
+Esta en el rango optimo de vitamina C. 
+
+Record de consumo de nutrientes, sesion Fri Nov 22 12:10:37 2019
+
+
+Calorias: 1900
+Proteinas: 560
+Calcio: 998
+Vitamina A: 625
+Vitamina C: 96
+
+Esta en el rango optimo de calorias. 
+Esta en el rango optimo de proteinas. 
+Esta en el rango optimo de calcio. 
+Esta en el rango optimo de vitamina A. 
+Esta consumiendo mas vitamina C de lo que deberia. 
