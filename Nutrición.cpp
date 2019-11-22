@@ -77,11 +77,11 @@ using namespace std;
         
         cout<<"Bienvenido/a a la sesion de "<<name<<endl;
         cout<<"Registro de consumo de nutrientes de el día: "<<endl;
-        cout<<"Calorias:";cin>>calo;cout<<endl;
-        cout<<"Proteinas: ";cin>>prot;cout<<endl;
-        cout<<"Calcio: ";cin>>calc;cout<<endl;
-        cout<<"Vitamina A: ";cin>>A;cout<<endl;
-        cout<<"Vitamina C: ";cin>>C;cout<<endl;
+        cout<<"calorias";cin>>calo;cout<<endl;
+        cout<<"Proteinas ";cin>>prot;cout<<endl;
+        cout<<"calcio ";cin>>calc;cout<<endl;
+        cout<<"Vitamina A ";cin>>A;cout<<endl;
+        cout<<"Vitamina C. ";cin>>C;cout<<endl;
         ifstream auxlog("aux"+name+".txt");
         if(auxlog.is_open()){
             while(getline(auxlog,line)){
@@ -98,11 +98,11 @@ using namespace std;
             a_log<<endl;
             a_log<<"Record de consumo de nutrientes, sesion "<<dt<<endl;
             a_log<<endl;
-            a_log<<"Calorias: "<<calo<<endl;
-            a_log<<"Proteinas: "<<prot<<endl;
-            a_log<<"Calcio: "<<calc<<endl;
-            a_log<<"Vitamina A: "<<A<<endl;
-            a_log<<"Vitamina C: "<<C<<endl;
+            a_log<<"calorias "<<calo<<endl;
+            a_log<<"Proteinas "<<prot<<endl;
+            a_log<<"calcio "<<calc<<endl;
+            a_log<<"Vitamina A "<<A<<endl;
+            a_log<<"Vitamina C. "<<C<<endl;
             a_log<<endl;
         a_log.close();
             
@@ -252,139 +252,139 @@ using namespace std;
        void mas_calo(){
             if(ag>=2 && ag<=3){
                 if(calo>=800 && calo<=1200){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<800){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calo>1200){
-                cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=8){
                 if(calo>=1200 && calo<=1400){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<1200){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calo>1400){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>8 && ag<=13){
                 if(calo>=1600 && calo<=2000){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<1600){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calo>2000){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>13 && ag<=18){
                 if(calo>=2000 && calo<2400){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<2000){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calo>2400){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>18 && ag<=30){
                 if(calo>=2400 && calo<=2600){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<2400){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calo>2600){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>30 && ag<=50){
                 if(calo>=2200 && calo<=2400){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<2200){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calo>2400){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -394,139 +394,139 @@ using namespace std;
         void mas_prot(){
             if(ag>=1 && ag<=3){
                 if(prot>=400 && prot<=500){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<400){
-                    cout<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos proteinas de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>500){
-                cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(prot>=750 && prot<=850){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<750){
-                    cout<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos proteinas de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>850){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(prot>=750 && prot<=850){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<750){
-                    cout<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>850){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(prot>=590 && prot<690){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<590){
-                    cout<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>690){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(prot>=590 && prot<=690){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<590){
-                    cout<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos proteinas de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>690){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>18 && ag<=50){
                 if(prot>=500 && prot<=600){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<500){
-                    cout<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>600){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -535,139 +535,139 @@ using namespace std;
         void mas_calc(){
             if(ag>=1 && ag<=3){
                 if(calc>=400 && calc<=500){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<400){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calc>500){
-                cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(calc>=750 && calc<=850){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<750){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calc>850){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(calc>=750 && calc<=850){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<750){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calc>850){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(calc>=1100 && calc<1200){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<1100){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calc>1200){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(calc>=1100 && calc<=1200){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<1100){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calc>1200){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>17 && ag<=50){
                 if(calc>=950 && calc<=1050){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<950){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calc>1050){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -676,139 +676,139 @@ using namespace std;
         void mas_A(){
             if(ag>=1 && ag<=3){
                 if(A>=200 && A<=300){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<200){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(A>300){
-                cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(A>=250 && A<=350){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<250){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(A>350){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(A>=350 && A<=450){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<350){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(A>450){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(A>=550 && A<650){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<550){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(A>650){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(A>=700 && A<=800){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<700){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(A>800){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>17 && ag<=50){
                 if(A>=600 && A<=700){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<600){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(A>700){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -819,139 +819,139 @@ using namespace std;
         void mas_c(){
             if(ag>=1 && ag<=3){
                 if(C>=17 && C<=23){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<17){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(C>23){
-                cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(C>=27 && C<=33){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<27){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(C>33){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(C>=42 && C<=47){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<42){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(C>47){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(C>=67 && C<73){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<67){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(C>73){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(C>=87 && C<=93){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<87){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(C>93){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>17 && ag<=50){
                 if(C>=107 && C<=113){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<107){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(C>113){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -963,139 +963,139 @@ using namespace std;
        void fem_calo(){
             if(ag>=1 && ag<=3){
                 if(calo>=800 && calo<=1200){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<800){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calo>1200){
-                cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=8){
                 if(calo>=1200 && calo<=1400){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<1200){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calo>1400){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>8 && ag<=13){
                 if(calo>=1400 && calo<=1600){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<1400){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calo>1600){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>13 && ag<=18){
                 if(calo>=1600 && calo<2000){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<1600){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calo>2000){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>18 && ag<=30){
                 if(calo>=2000 && calo<=2200){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<2000){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calo>2200){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>30 && ag<=50){
                 if(calo>=1800 && calo<=2000){
-                    cout<<"Esta en el rango optimo de calorias: "<<endl;
+                    cout<<"Esta en el rango optimo de calorias "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calorias: "<<endl;
+                    a_log<<"Esta en el rango optimo de calorias "<<endl;
                     a_log.close();
                 }else
                 if(calo<1800){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calo>2000){
-                    cout<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calorias de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -1105,139 +1105,139 @@ using namespace std;
         void fem_prot(){
             if(ag>=1 && ag<=3){
                 if(prot>=400 && prot<=500){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<400){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>500){
-                cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(prot>=750 && prot<=850){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<750){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>850){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(prot>=750 && prot<=850){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<750){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>850){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(prot>=590 && prot<690){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<590){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>690){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(prot>=590 && prot<=690){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<590){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>690){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
-            if(ag>18 && ag<=50){
+            if(ag>17 && ag<=50){
                 if(prot>=500 && prot<=600){
-                    cout<<"Esta en el rango optimo de proteinas: "<<endl;
+                    cout<<"Esta en el rango optimo de proteinas "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de proteinas: "<<endl;
+                    a_log<<"Esta en el rango optimo de proteinas "<<endl;
                     a_log.close();
                 }else
                 if(prot<500){
-                    cout<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>600){
-                    cout<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas proteinas de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas proteinas de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -1246,139 +1246,139 @@ using namespace std;
         void fem_calc(){
             if(ag>=1 && ag<=3){
                 if(calc>=400 && calc<=500){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<400){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calc>500){
-                cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(calc>=750 && calc<=850){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<750){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calc>850){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(calc>=750 && calc<=850){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<750){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calc>850){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(calc>=1100 && calc<1200){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<1100){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calc>1200){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(calc>=1100 && calc<=1200){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<1100){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(calc>1200){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>17 && ag<=50){
                 if(calc>=950 && calc<=1050){
-                    cout<<"Esta en el rango optimo de calcio: "<<endl;
+                    cout<<"Esta en el rango optimo de calcio "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de calcio: "<<endl;
+                    a_log<<"Esta en el rango optimo de calcio "<<endl;
                     a_log.close();
                 }else
                 if(calc<950){
-                    cout<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos calcio de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(calc>1050){
-                    cout<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas calcio de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas calcio de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -1387,139 +1387,139 @@ using namespace std;
         void fem_A(){
             if(ag>=1 && ag<=3){
                 if(A>=200 && A<=300){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<200){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(A>300){
-                cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(A>=250 && A<=350){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<250){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(A>350){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(A>=350 && A<=450){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<350){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(A>450){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(A>=550 && A<650){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<550){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(A>650){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(A>=600 && A<=700){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<600){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(A>700){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>17 && ag<=50){
                 if(A>=600 && A<=700){
-                    cout<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina A "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina A: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina A "<<endl;
                     a_log.close();
                 }else
                 if(A<600){
-                    cout<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(A>700){
-                    cout<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina A de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina A de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -1530,139 +1530,139 @@ using namespace std;
         void fem_c(){
             if(ag>=1 && ag<=3){
                 if(C>=17 && C<=23){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<17){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(C>23){
-                cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                 ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else 
             if(ag>3 && ag<=6){
                 if(C>=27 && C<=33){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<27){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(C>33){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>6 && ag<=10){
                 if(C>=42 && C<=47){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<42){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(C>47){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>10 && ag<=14){
                 if(C>=67 && C<73){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<67){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(C>73){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>14 && ag<=17){
                 if(C>=97 && C<=103){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<97){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera:"<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(C>103){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }
             }else
             if(ag>17 && ag<=50){
                 if(C>=90 && C<=95){
-                    cout<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    cout<<"Esta en el rango optimo de vitamina C. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta en el rango optimo de vitamina C: "<<endl;
+                    a_log<<"Esta en el rango optimo de vitamina C. "<<endl;
                     a_log.close();
                 }else
                 if(C<90){
-                    cout<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo menos vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(C>95){
-                    cout<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    cout<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo mas vitamina C de lo que debiera: "<<endl;
+                    a_log<<"Esta consumiendo mas vitamina C de lo que deberia. "<<endl;
                     a_log.close();
                     }
                 }
@@ -1701,6 +1701,8 @@ void NMoFID(){
         hei>>ht;
         stringstream wei(auxt[2]);
         wei>>wt;
+        ofstream aux_log("aux"+name+".txt");
+        
         strcpy(sx,auxt[1].c_str());
         switch (sx[0]){
             case 'M':
@@ -1715,7 +1717,7 @@ int main(){
     int ans=0;
 
     cout<<"Bienvenido a programa de nitricion de un mes: "<<endl;
-    cout<<"Ingrese opción"<<endl;
+    cout<<"Ingrese opcion"<<endl;
     cout<<"1. Registrar cliente."<<endl;
     cout<<"2. Modificar Registro existente"<<endl;
     cout<<"3. Lectura de registro"<<endl;
