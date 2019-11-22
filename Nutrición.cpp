@@ -88,7 +88,7 @@ using namespace std;
         string line;
         
         cout<<"Bienvenido/a a la sesion de "<<name<<endl;
-        cout<<"Registro de consumo de nutrientes de el día: "<<endl;
+        cout<<"Registro de consumo de nutrientes de el dia: "<<endl;
         cout<<"Calorias: ";cin>>calo;cout<<endl;
         cout<<"Proteinas: ";cin>>prot;cout<<endl;
         cout<<"Calcio: ";cin>>calc;cout<<endl;
@@ -1124,10 +1124,10 @@ using namespace std;
                     a_log.close();
                 }else
                 if(prot<400){
-                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>500){
@@ -1147,10 +1147,10 @@ using namespace std;
                     a_log.close();
                 }else
                 if(prot<750){
-                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>850){
@@ -1170,10 +1170,10 @@ using namespace std;
                     a_log.close();
                 }else
                 if(prot<750){
-                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>850){
@@ -1193,10 +1193,10 @@ using namespace std;
                     a_log.close();
                 }else
                 if(prot<590){
-                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>690){
@@ -1216,10 +1216,10 @@ using namespace std;
                     a_log.close();
                 }else
                 if(prot<590){
-                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que deberia."<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia."<<endl;
                     a_log.close();
                 }else
                 if(prot>690){
@@ -1239,10 +1239,10 @@ using namespace std;
                     a_log.close();
                 }else
                 if(prot<500){
-                    cout<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    cout<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     ofstream a_log;
                     a_log.open(name+".txt",ios::app);
-                    a_log<<"Esta consumiendo menos calorias de lo que deberia. "<<endl;
+                    a_log<<"Esta consumiendo menos proteinas de lo que deberia. "<<endl;
                     a_log.close();
                 }else
                 if(prot>600){
@@ -1746,9 +1746,12 @@ int main(){
     switch(ans){
         case 1:
             menu_ingresos();
-            p_registros();
             menu_sesion();
             NMoF();
+            p_registros();
+            
+            
+            
             break;
         case 2:
             menu_sesion();
